@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.3em;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img{
+    height: 8vh;
+}
+
+nav{
+    background-color: #222;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 6vh;
+    padding: 0;
+}
+
+nav ul li{
+    flex-shrink: 1;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .01em;
+}
+
+main{
+    width: 90%;
+    margin: 2% auto;
+}
+
+main > h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+div#buttons{
+    padding: 10px 15px;
+    width: 90%;
+    margin: 30px auto; 
+}
+
+div#buttons .btn{
+    border: 1px solid #000;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+div#buttons div.row{
+    border-bottom: 1px solid #ccc;
+    margin-top:8px;
+}
+
+div#buttons div.row > .divDesc{
+    padding-top: 8px;
+    text-align: center;
+}
+
+
+footer{
+    padding: 2vh 0;
+    background-color: #000;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/* Responsividade Breakpoints */
+
+@media (max-width: 720px){
+    .divBtn a{
+        display: flex;
+        justify-content: center;
+    }
+}

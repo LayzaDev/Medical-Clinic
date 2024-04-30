@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.3em;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    height: 13vh;
+    /* border-bottom: 1px solid #1949ae; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > img{
+    height: 8vh;
+}
+
+nav{
+    background-color: #1949ae;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 6vh;
+    padding: 0;
+}
+
+nav ul li{
+    flex-shrink: 1;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    /* color: #fdbd18; */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .01em;
+}
+
+
+#banner{
+    background-image: url(../images/clinicaDesfocada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#banner .img{
+    display: flex;
+    justify-content: center;
+    padding: 3vh 0;
+}
+
+#banner .img img{
+    width: 80%;
+}
+
+.default .txt{
+    padding: 2vh 4vw;
+    box-sizing: border-box;
+    line-height: 1.1em;
+}
+
+.default .txt h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+#banner .txt h2{
+    color: #fdbd18;
+}
+
+.default .txt p{
+    letter-spacing: .01em;
+    text-align: justify;
+}
+
+#banner .txt p{
+    color: white;
+}
+
+#quemSomos{
+    box-sizing: border-box;
+}
+
+#quemSomos .txt h2{
+    color: #325bc5;
+    margin-top: 10px;
+}
+
+#quemSomos .img img{
+    width: 100%;
+}
+
+#cards{
+    padding: 2vh 0;
+    background-color: #325bc5;
+}
+
+#cards h2{
+    text-align: center;
+    color: #fdbd18;
+}
+
+#cards section{
+    box-sizing: border-box;
+    padding: 0 2vw;
+}
+
+#cards section .card{
+    background-color: white;
+    margin-bottom: 10vh;
+    padding-bottom: 2vh;
+    border-radius: 20px;
+}
+
+#cards section .card:last-child{
+    margin-bottom: 0vh;
+}
+
+#cards section .card img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#cards section .card h3{
+    text-align: center;
+}
+
+#cards section .card p{
+    text-align: justify;
+    padding: 0 4vw;
+}
+
+footer{
+    padding: 2vh 0;
+    background-color: #1949ae;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/* Responsividade Breakpoints */
+
+@media (min-width: 992px){
+    #banner section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner .img{
+        width: 48vw;
+    }
+
+    .default .txt{
+        width: 48vw;
+    }
+
+    .default .txt h2{
+        text-align: right;
+    }
+
+    #quemSomos{
+        height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #quemSomos section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    #quemSomos .txt{
+        height: 60vh;
+    }
+
+    #quemSomos .txt h2{
+        text-align: center;
+    }
+
+    #quemSomos .img{
+        width: 48vw;
+        height: 60vh;
+    }
+
+    #quemSomos .img img{
+        height: 60vh;
+    }
+
+    #cards section{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #cards section .card{
+        width: 30%;
+        height: 580px;
+    }
+
+    #cards section .card p{
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width: 480px){
+    nav ul li a{
+        font-size: 15px;
+    }
+}

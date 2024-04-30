@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > img {
+  height: 8vh;
+}
+
+nav {
+  background-color: #1949ae;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 6vh;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: .01rem;
+}
+
+.container {  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.card {
+  padding: 1em;
+  max-width: 400px;
+  margin-bottom: 18px;
+}
+
+img {
+  height: 30vh;
+}
+
+h2 {
+  font-family: "Museo1";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 5px 0 20px;
+  color: #1949ae;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.description {
+  font-family: "Museo1";
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #858585;
+}
+
+.description span {
+  cursor: pointer;
+}
+
+.description span:hover {
+  transition: 0.5s;
+  color: #2b2a2a;
+}
+
+.modal a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1949ae;
+  border: 1px solid #0a0a75;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.modal a:hover {
+  background-color: #0f3b99;
+}
+
+.modal {
+  max-width: 300px;
+  color: #858585;
+  display: none;
+}
+
+.mostraModal {
+  display: block;
+}
+
+footer{
+    padding: 2vh 0;
+    background-color: #1949ae;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 480px){
+  img {
+    height: 20vh;
+  }
+
+  h2, .description {
+    font-size: 14px;
+  }
+
+  .card h2 ~ span {
+    font-size: 12px;
+  }
+}
